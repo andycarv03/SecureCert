@@ -65,7 +65,7 @@ func (t *SimpleChaincode) Invoke(stub shim.ChaincodeStubInterface) pb.Response {
 		return t.addCert(stub, args)
 	} else if function == "readCert" { //read a Certificate
 		return t.readCert(stub, args)
-	} else if function == "transferCert" { //read a Certificate
+	} else if function == "transferCert" { //transfer a Certificate
 		return t.transferCert(stub, args)
 	}
 
